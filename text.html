@@ -2,11 +2,61 @@
 <!DOCTYPE html>
 <html>
 <head>
+     <style>
+body
+{
+	font-family: arial, helvetica, freesans, sans-serif;
+	font-size: 100%;
+	color: #333;
+	background-color: #ddd;
+}
+
+h1
+{
+	font-size: 1.5em;
+	font-weight: normal;
+	margin: 0;
+	color:#800000
+}
+
+
+fieldset
+{
+	padding: 10px;
+	border-radius: 10px;
+}
+
+label, input, button
+{
+	display: block;
+	width: 80%;
+	font-size: 1em;
+	text-align: center;
+	margin: 2px auto;
+	color:#000000	
+}
+
+button
+{
+	width: 10em;
+	font-weight: bold;
+	color:#808080	
+}
+div {
+    background-color:lightblue;
+    border: 1px solid;
+    padding: 50px;
+}
+</style>
 	<title>Sample JavaScript code</title>
 </head>
 <body>
 <h1>Sample Js Code</h1>
 	<p id ="sample"></p>
-	<script src="text.js"></script>
+	<hr>
+	 	<p id="guess">Guess your password and press enter</p>
+	 	  <input type="text" name="guess" onkeypress="guessPassword(this.value, event)">
+	                <script src="./text.js"></script>
+
 </body>
 </html>
